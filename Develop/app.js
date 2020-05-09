@@ -34,7 +34,7 @@ function getInfo() {
         .then(function (response) {
             //if no test.html is written and program is ended
             if (response.add == 'No') {
-                fs.writeFile("test.html", render(newEmployees), function (err) { if (err) throw err })
+                fs.writeFile("team.html", render(newEmployees), function (err) { if (err) throw err })
             }
             //if yes user is asked which role the employee fills
             if (response.add == 'Yes') {
